@@ -11,7 +11,7 @@ function App() {
 
   const handleClick = async () => {
       try {
-          const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=bb67890ce3764ce79ed84832231611&q=${search}`)
+          const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=bb67890ce3764ce79ed84832231611&q=${search}`)
           const resJson = await response.json()
           setCurrent(resJson.current)
           setCondition(resJson.current.condition)
